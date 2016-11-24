@@ -8,21 +8,24 @@ Merely a play around with WebRTC and Socket.io
 
 ## Using:
 * getVideo (very oldskool one)
-    * Open index.html
+        * uses callback version of `getUserMedia()` (compatible for current browsers)
+        * other code uses promised-based MediaDevices API
+    * Open `index.html`
+        * check out stream in dev console
 
 * streamVideo (uses RTCPeerConnection)
-    * protip: [webrtc-internals](chrome://webrtc-internals)
-    * look at localStream, pc1, pc2 in dev tools console (cmd + alt + j)
-    * pc1.localDescription
+    * pro-tip: [webrtc-internals](chrome://webrtc-internals)
+    * look at `localStream`, `pc1`, `pc2 `in dev tools console `(cmd + alt + j)`
+    * & `pc1.localDescription`
 
 * messagingService (uses socket.io)
-    * npm install
-    * node index.js
-    * localhost:8080
+    * `npm install`
+    * `node index.js`
+    * open `localhost:8080`
     * x2 tabs, same room name, + web dev console. See the logging?
 
 * photoShareDataChannel
-    * node index.js
+    * `node index.js`
     * x2 tabs
     * click snap & send
         * look at incoming area in tab
