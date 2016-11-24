@@ -37,7 +37,7 @@ Merely a play around with WebRTC (JavaScript APIs), Socket.io and Node.js
         ```
     
 * streamVideo (uses RTCPeerConnection)
-    * pro-tip: [webrtc-internals](chrome://webrtc-internals)
+    * pro-tip: [webrtc-internals](chrome://webrtc-internals) -- `chrome://webrtc-internals`
     * look at `localStream`, `pc1`, `pc2 `in dev tools console `(cmd + alt + j)`
     * & `pc1.localDescription`
 
@@ -48,7 +48,7 @@ Merely a play around with WebRTC (JavaScript APIs), Socket.io and Node.js
     * x2 tabs, same room name, + web dev console. See the logging?
         * **TODO: get room name from URL. `localhost:8080/team13 ` --> room name = 'team13'** 
         * **TODO: change design to enable >1 person to share same video chat room**
-        * **TODO: change hard-corded room name**
+        * **TODO: change hard-coded room name**
         
 * photoShareDataChannel
     * `node index.js`
